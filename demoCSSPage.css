@@ -1,0 +1,190 @@
+.banner{
+    position: relative;
+}
+.banner #bannerImage{
+    width:100%;
+    max-height: 300px;
+}
+.banner .welcome{
+    position: absolute;
+    color:#ffffff;
+    font-size: 35px;
+    padding:5px;
+    top: 5%;
+    left: 5%;
+}
+.banner #ditto{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    width: 10%;
+    opacity: 0;
+}
+.banner #ditto:hover{
+    opacity: 2;
+}
+.game .description{
+    padding-left: 40px;
+    font-size: 20px;
+}
+body{background-color:rgb(217, 255, 234);}
+
+.galleryText{
+    padding-left: 25px;
+}
+div.gallery{
+    margin: 5px;
+    border: 2px solid #52ac9d;
+    width: 23%;
+    display: inline-block;
+    /* line side by side */
+}
+div.gallery:hover{
+    border: 2px solid #00ffc8
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+div.desc{
+    padding: 15px;
+    text-align: center;
+    color:rgb(194, 124, 102);
+}
+
+div.description{
+    
+    left: 5%;
+}
+div.description:hover{
+    font-weight: bolder;
+}
+
+.deck{
+    top: 400px;
+    padding-left:50px;
+}
+
+.deck .rows{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:4px;
+    padding-left: 4px;
+}
+
+.deck .columns{
+    flex: 25%;
+    max-width: 23%;
+    padding:4px;
+}
+.deck .columns #fake:hover{
+    cursor: pointer;
+}
+.deck .columns img{
+    margin-top:6px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.galleryClick .column{
+    display:inline-block;
+    padding: 10px;
+    margin-left: 10px;
+}
+.galleryClick .column img{
+    top: 5000px;
+    opacity: 0;
+    height: 350px;
+    /* cursor: pointer; */
+    border: 4px solid #b4d8c1;
+}
+.galleryClick #brod{
+    opacity: 2;
+}
+.galleryClick .column img:hover{
+    opacity: 2;
+}
+.galleryClick .row:after{
+    display: table;
+    clear:both;
+}
+.galleryClick .container{
+    position: absolute;
+    display: none;
+    padding-left: 140px;
+    width: 800px;
+    top: 2000px;
+}
+.galleryClick #imageText{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    padding-left: 140px;
+    font-size: 15px;
+}
+
+div.gif #gif{
+    position: absolute;
+    
+    right:42%;
+    scroll-margin-bottom: 0%;
+    
+    width: 200px;
+    
+    
+}
+div.bottom{
+    text-align: center;
+    font-size: 150%;
+    color:rgb(68, 196, 196)
+}
+
+div.gif #gif{
+    opacity: 0;
+}
+div.gif #gif:hover{
+    opacity: 2;
+}
+
+/*.galleryClick .column{
+    display: inline-block;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.galleryClick .column img{
+    top:5000px;
+    opacity: 0.8;
+    height: 350px;
+    cursor: pointer;
+    border: 4px solid #00ffc8;
+}
+
+.galleryClick .column img:hover{
+    opacity: 2;
+}
+.galleryClick .row:after{
+    display: table;
+    clear: both;
+}
+.galleryClick .container{
+    position: absolute;
+    display:none;
+    padding-left: 100px;
+    width:800px;
+}
+.galleryClick #imageText{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    padding-left:140px;
+    font-size: 15px;
+}
+
+
+ .deck div.columns div.hover :hover{
+    border: 2px solid #00ffc8;
+} */
+
