@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wenna's Website</title>
+        <link rel = "stylesheet" href = "demoCSSPage.css">
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <img src = "images/natureBanner.jpeg" id = "bannerImage" alt = "banner">
+            <div class = "welcome">
+                <h2>Welcome to <br> the GIF Hunt! </h2>
+            </div>
+            <img src = "images/ditto.gif" id = "ditto" alt = "ditto gif">
+        </section>
+
+        <!--click image to go to link-->
+        <section class = "galleryText">
+            <div class = "gallery">
+                <a target="link" href = "https://pokemonshowdown.com/">
+                    <img src = "images/electrodeDitto.jpeg" id = "galleryImg" alt = "electrode">
+                </a>
+                <div class = "desc">FIND</div>
+            </div>
+            <div class = "gallery">
+                <a target="link" href = "about.html">
+                    <img src = "images/dittoPikachu.jpeg" id = "galleryImg" alt = "pikachu">
+                </a>
+                <div class = "desc">THE</div>
+            </div>
+            <div class = "gallery">
+                <a target="link" href = "https://pokemonshowdown.com/">
+                    <img src = "images/shinyDitto.png" id = "galleryImg" alt = "shiny ditto">
+                </a>
+                <div class = "desc">HIDDEN</div>
+            </div>
+            <div class = "gallery">
+                <a target="link" href = "https://pokemonshowdown.com/">
+                    <img src = "images/BrodiesDitto.png" id = "galleryImg" alt = "Brodie's Ditto">
+                </a>
+                <div class = "desc">GIFS</div>
+            </div>
+        </section>
+
+        <section class = "game">
+            <div class = "description">
+                <a target="link" href = "about.html">
+                    <p>Find the four hidden gifs</p>
+                </a>
+                
+            </div>
+        </section>
+        
+
+
+        <section class = "deck">
+            <div class = "rows">
+                <div class = "columns">
+                    <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto">
+                    <img src = "images/dittoTroop.png" alt = "troop" id = "fake">
+                    <img src = "images/ditto.png" alt = "ditto">
+                    <img src = "images/shinyDitto.png" alt = "shiny">
+                </div>
+                <div class = "columns">
+                    <img src = "images/dittoTroop.png" alt = "troop">
+                    <img src = "images/ditto.png" alt = "ditto">
+                    <img src = "images/shinyDitto.png" alt = "shiny" id = "fake">
+                    <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto">
+                </div>
+                <div class = "columns">
+                    <img src = "images/ditto.png" alt = "ditto">
+                    <img src = "images/shinyDitto.png" alt = "shiny">
+                    <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto">
+                    <img src = "images/dittoTroop.png" alt = "troop">
+                </div>
+                <div class = "columns">
+                    <div class = "hover">
+                        <img src = "images/shinyDitto.png" alt = "shiny" id = "fake">
+                        <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto">
+                        <img src = "images/dittoTroop.png" alt = "troop">
+                        <img src = "images/ditto.png" alt = "ditto">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class = "galleryClick">
+            <div class="container">
+              <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            
+              <img id="expandedImg" style="width:100%">
+            
+              <div id="imgtext"></div>
+            </div>
+  
+            <script>
+            function myFunction(imgs) {
+              var expandImg = document.getElementById("expandedImg");
+              var imgText = document.getElementById("imgtext");
+              expandImg.src = imgs.src;
+              imgText.innerHTML = imgs.alt;
+              expandImg.parentElement.style.display = "block";
+              }
+            </script>
+
+            <div class = "row">
+                <div class = "column">
+                    <img src = "images/ditto1.gif" alt = "BrodiesDitto" onclick = "myFunction(this);">
+                </div>
+                <div class = "column">
+                    <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto" id =brod>
+                </div>
+            </div>
+
+            <div class = "gif">
+                <img src = "images/ditto2.gif" id = "gif" alt = "ditto gif">
+            </div>
+
+            <div class = "bottom">
+                <h3>Thank You for Visiting this Page</h3>
+                <h5>- Wenna :)</h5>
+            </div>
+
+
+
+<!--        <section class= "galleryClick">
+            <div class = "container">
+                <span onclick = "this.parentElement.style.display = 'none'" class = "closebtn">&times;</span>
+                <img id = "expandedImg" style = "width:100%">
+                <div id = "imageText"></div>
+            </div>
+            <script>
+                function myFunction(imgs){
+                    var expandingImg = document.getElementByID("expandedImg");
+                    var imgText = document.getElementByID("imageText");
+                    expandingImg.src = imgs.src;
+                    imgText.innerHTML = imgs.alt;
+                    expandingImg.parentElement.style.display = "block";
+                }
+            </script>
+            
+            <div class = "row">
+                <div class = "column">
+                    <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto" onclick = "myFunction(this);">
+                </div>
+                <div class = "column">
+                    <img src = "images/BrodiesDitto.png" alt = "BrodiesDitto" onclick = "myFunction(this);">
+                </div>
+            </div>
+            
+        </section>
+-->
+    </body>
+</html>
